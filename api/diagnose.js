@@ -27,7 +27,7 @@ estado_general debe ser: saludable, leve, moderado o crítico. Si está sana enf
         'anthropic-version': '2023-06-01'
       },
       body: JSON.stringify({
-        model: 'claude-sonnet-4-20250514',
+        model: 'claude-3-5-haiku-20241022',
         max_tokens: 2000,
         messages: [{
           role: 'user',
