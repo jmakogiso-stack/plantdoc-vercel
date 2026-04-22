@@ -56,6 +56,7 @@ estado_general debe ser: saludable, leve, moderado o crítico. Si está sana enf
     return res.status(200).json({ success: true, diagnosis });
 
   } catch(err) {
-    return res.status(500).json({ error: err.message });
+    console.error('ERROR DETALLE:', err);
+return res.status(500).json({ error: err.message, stack: err.stack });
   }
 }
